@@ -18,7 +18,7 @@ public class SlavicMod {
 
     public static final String MOD_ID = "slavicmod";
     private static final Logger LOGGER = LogUtils.getLogger();
-
+//comment
     public SlavicMod(){
 
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
