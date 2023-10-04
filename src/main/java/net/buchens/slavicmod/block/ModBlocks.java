@@ -22,11 +22,11 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SlavicMod.MOD_ID);
 
-    public static final RegistryObject<Block> STEEL_BLOCK = registerBlockf("steel_block",
+    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(8f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
 
-    private static RegistryObject<Block> registerBlockf(String steelBlock, Object o, CreativeModeTab slaviccraftTab) {
+    private static RegistryObject<Block> registerBlock(String steelBlock, Object o, CreativeModeTab slaviccraftTab) {
     }
 
     public static final RegistryObject<Block> STEEL_ORE = registerBlockItem("steel_ore",
