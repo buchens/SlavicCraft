@@ -24,22 +24,18 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(8f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
-
-    private static RegistryObject<Block> registerBlock(String steelBlock, Object o, CreativeModeTab slaviccraftTab) {
-    }
-
-    public static final RegistryObject<Block> STEEL_ORE = registerBlockItem("steel_ore",
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
+    public static final RegistryObject<Block> STEEL_ORE = registerBlock("steel_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(8f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3,7)), ModCreativeModeTab.SLAVICCRAFT_TAB);
-        public static final RegistryObject<Block> DEEPSLATE_STEEL_ORE = registerBlockItem("deepslate_steel_ore",
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
+    public static final RegistryObject<Block> DEEPSLATE_STEEL_ORE = registerBlock("deepslate_steel_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(8f).requiresCorrectToolForDrops(),
-                    UniformInt.of(3,7)), ModCreativeModeTab.SLAVICCRAFT_TAB);
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
 
 
-    private static <T extends Block>RegistryObject<T>   regiisterBlock(String name, Supplier<T> block, CreativeModeTab tab) {
+
+
+    private static <T extends Block>RegistryObject<T>   registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn, tab);
         return toReturn;
@@ -50,7 +46,6 @@ public class ModBlocks {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
     }
 
-    public static void register(IEventBus eventBus){
-        BLOCKS.register(eventBus);
+    public static void register(IEventBus modEventBus) {
     }
 }
