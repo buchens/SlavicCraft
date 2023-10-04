@@ -1,5 +1,8 @@
 {
   "item.slavicmod.chainmailbraid": "Chainmail braid",
 
-  "itemGroup.slaviccrafttab": "Slavic Craft"
+  "itemGroup.slaviccrafttab": "Slavic Craft",
+  "block.slaviccraft.steel_block": "Block of Steel",
+  "block.slaviccraft.steel_ore": "Steel Ore",
+  "block.slaviccraft.deepslatesteel_ore": "Deepslate Steel ore"
 }
