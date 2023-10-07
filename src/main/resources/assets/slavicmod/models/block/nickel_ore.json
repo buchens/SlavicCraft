@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "slavicmod:block/deepslate_steel_ore"
+    "all": "slavicmod:block/nickel_ore"
   }
 }
