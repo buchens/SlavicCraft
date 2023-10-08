@@ -13,13 +13,23 @@ public class ModItems {
 
     public static final RegistryObject<Item> CHAINMAILBRAID = ITEMS.register("chainmailbraid",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+    public static final RegistryObject<Item> STEEL_WIRE = ITEMS.register("steel_wire",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> CHROME_INGOT = ITEMS.register("chrome_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+    public static final RegistryObject<Item> RAW_CHROME = ITEMS.register("raw_chrome",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> MANGANESE_INGOT = ITEMS.register("manganese_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+    public static final RegistryObject<Item> RAW_MANGANESE = ITEMS.register("raw_manganese",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> NICKEL_INGOT = ITEMS.register("nickel_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+    public static final RegistryObject<Item> RAW_NICKEL = ITEMS.register("raw_nickel",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+    public static final RegistryObject<Item> RAW_VANADIUM = ITEMS.register("raw_vanadium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> VANADIUM_INGOT = ITEMS.register("vanadium_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
