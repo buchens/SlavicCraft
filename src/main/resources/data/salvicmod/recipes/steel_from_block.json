@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-        "item": "slavicmod:item/steel_block"
+        "block": "block.slavicmod.steel_block"
     }
     ],
   "result": {
