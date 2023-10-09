@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "slavicmod:item/steel_ingot"
+      "item": "slavicmod:vanadium_ingot"
     }
   },
   "pattern": [
@@ -11,6 +11,6 @@
     "###"
   ],
   "result": {
-    "item": "slavicmod:block/steel_block"
+    "item": "slavicmod:vanadium_block"
   }
 }

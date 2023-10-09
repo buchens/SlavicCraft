@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "iron_ingot",
+  "ingredients": [
+    {
+      "item": "slavicmod:manganese_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "slavicmod:manganese_ingot"
+  }
+}

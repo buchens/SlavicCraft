@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.4,
+  "group": "vanadium",
+  "ingredient": {
+    "item": "slavicmod:raw_nickel"
+  },
+  "result": "slavicmod:nickel_ingot"
+}
