@@ -3,6 +3,8 @@ package net.buchens.slavicmod;
 import com.mojang.logging.LogUtils;
 import net.buchens.slavicmod.block.ModBlocks;
 import net.buchens.slavicmod.item.ModItems;
+import net.buchens.slavicmod.world.feature.ModConfiguredFeatures;
+import net.buchens.slavicmod.world.feature.ModPlacedFeatures;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,6 +30,8 @@ public class SlavicMod {
         ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
