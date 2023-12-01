@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "slavicmod:raw_vanadium"
+    },
+    {
+      "item": "slavicmod:raw_nickel"
+    },
+    {
+      "item": "slavicmod:raw_chrome"
+    },
+    {
+      "item": "slavicmod:raw_manganese"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "slavicmod:raw_steel"
+  }
+}

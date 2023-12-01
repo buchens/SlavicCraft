@@ -29,6 +29,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+    public static final RegistryObject<Item> RAW_STEEL = ITEMS.register("raw_steel",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> RAW_VANADIUM = ITEMS.register("raw_vanadium",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> VANADIUM_INGOT = ITEMS.register("vanadium_ingot",
