@@ -1,6 +1,7 @@
 package net.buchens.slavicmod.world.feature;
 
 import net.buchens.slavicmod.SlavicMod;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.registries.DeferredRegister;
@@ -39,6 +40,13 @@ public class ModPlacedFeatures {
             () -> new PlacedFeature(ModConfiguredFeatures.Silver_Ore.getHolder().get(),
                     commmonOrePlacement( 5,
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom( -10), VerticalAnchor.aboveBottom( 60)))));
+
+
+    public static final RegistryObject<PlacedFeature> CELANDINE_PLACED = PLACED_FEATURES.register("celandine_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.Celandine.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(16),
+    InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
+
+
 
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_ ) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());

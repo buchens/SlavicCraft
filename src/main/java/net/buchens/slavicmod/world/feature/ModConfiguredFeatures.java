@@ -1,5 +1,10 @@
 package net.buchens.slavicmod.world.feature;
 
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraftforge.registries.RegistryObject;
 import com.google.common.base.Suppliers;
 import net.buchens.slavicmod.SlavicMod;
@@ -14,6 +19,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.core.Registry;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
 
 import java.util.function.Supplier;
 import java.util.List;
@@ -59,6 +65,11 @@ public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_
 
     public static final RegistryObject<ConfiguredFeature<?,?>> Silver_Ore = CONFIGURED_FEATURES.register("silver_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_Silver_Ore.get(), 5)));
+
+    public static final RegistryObject<ConfiguredFeature<?,?>> Celandine = CONFIGURED_FEATURES.register("celandine",
+            () -> new ConfiguredFeature<>(Feature.FLOWER,
+                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CELANDINE.get())) ))));
 
 
     public static void register(IEventBus eventBus){

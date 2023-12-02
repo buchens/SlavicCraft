@@ -28,7 +28,9 @@
   "block.slavicmod.chrome_block": "Block of Chrome",
   "block.slavicmod.manganese_block": "Block of Manganese",
   "block.slavicmod.deepslate_manganese_ore": "Deepslate Manganese Ore",
-  "block.slavicmod.manganese_ore": "Manganese Ore"
+  "block.slavicmod.manganese_ore": "Manganese Ore",
+  "block.slavicmod.celandine": "Celandine",
+  "block.slavicmod.potted_celandine": "Potted Celandine"
 
 
 }
