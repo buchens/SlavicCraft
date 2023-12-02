@@ -41,6 +41,11 @@ public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.MANGANESE_ORE.get().defaultBlockState()),
             OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_MANGANESE_ORE.get().defaultBlockState())));
 
+    public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_Silver_Ore = Suppliers.memoize(() -> List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, ModBlocks.SILVER_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, ModBlocks.DEEPSLATE_SILVER_ORE.get().defaultBlockState())));
+
+
 
     public static final RegistryObject<ConfiguredFeature<?,?>> NICKEL_ORE = CONFIGURED_FEATURES.register("nickel_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_NICKEL_ORE.get(), 8)));
@@ -51,6 +56,9 @@ public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_
 
     public static final RegistryObject<ConfiguredFeature<?,?>> Manganese_Ore = CONFIGURED_FEATURES.register("manganese_ore",
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_Manganese_Ore.get(), 8)));
+
+    public static final RegistryObject<ConfiguredFeature<?,?>> Silver_Ore = CONFIGURED_FEATURES.register("silver_ore",
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_Silver_Ore.get(), 5)));
 
 
     public static void register(IEventBus eventBus){

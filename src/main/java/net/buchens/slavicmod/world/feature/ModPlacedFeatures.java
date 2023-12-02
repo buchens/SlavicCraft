@@ -35,6 +35,11 @@ public class ModPlacedFeatures {
                     commmonOrePlacement( 8,
                             HeightRangePlacement.triangle(VerticalAnchor.aboveBottom( -10), VerticalAnchor.aboveBottom( 50)))));
 
+    public static final RegistryObject<PlacedFeature> Silver_ORE_PLACED = PLACED_FEATURES.register("silver_ore_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.Silver_Ore.getHolder().get(),
+                    commmonOrePlacement( 5,
+                            HeightRangePlacement.triangle(VerticalAnchor.aboveBottom( -10), VerticalAnchor.aboveBottom( 60)))));
+
     public static List<PlacementModifier> orePlacement(PlacementModifier p_195347_, PlacementModifier p_195348_ ) {
         return List.of(p_195347_, InSquarePlacement.spread(), p_195348_, BiomeFilter.biome());
 
