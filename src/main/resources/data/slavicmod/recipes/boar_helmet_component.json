@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "slavicmod:boar_fur"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #"
+
+  ],
+  "result": {
+    "item": "slavicmod:boar_helmet_component",
+    "count": 1
+  }
+}

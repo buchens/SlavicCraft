@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "slavicmod:bear_fur"
+    }
+  },
+  "pattern": [
+    "# #",
+    "###",
+    "###"
+  ],
+  "result": {
+    "item": "slavicmod:bear_chestplate_component",
+    "count": 1
+  }
+}

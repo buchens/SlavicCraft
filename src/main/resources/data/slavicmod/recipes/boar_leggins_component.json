@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "slavicmod:boar_fur"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+
+  ],
+  "result": {
+    "item": "slavicmod:boar_leggins_component",
+    "count": 1
+  }
+}
