@@ -1,20 +1,24 @@
 package net.buchens.slavicmod.block;
 
+import net.minecraft.world.level.block.Blocks;
 import net.buchens.slavicmod.SlavicMod;
 import net.buchens.slavicmod.item.ModCreativeModeTab;
 import net.buchens.slavicmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
 
 import java.util.function.Supplier;
 
@@ -73,6 +77,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
+
+
+    public static final RegistryObject<Block> CELANDINE = registerBlock("celandine",
+            () -> new FlowerBlock(null, 0,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.SLAVICCRAFT_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
