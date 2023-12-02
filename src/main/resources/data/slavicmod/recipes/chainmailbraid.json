@@ -1,16 +1,17 @@
 {
   "type": "minecraft:crafting_shaped",
   "key": {
-    "X": {
-      "item": "slavicmod:steelwire"
+    "#": {
+      "item": "slavicmod:steel_wire"
     }
   },
   "pattern": [
-    "XXX",
-    "X X",
-    "XXX"
+    "###",
+    "# #",
+    "###"
   ],
   "result": {
     "item": "slavicmod:chainmailbraid",
+    "count": 1
   }
 }
