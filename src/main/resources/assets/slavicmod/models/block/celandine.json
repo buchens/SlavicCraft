@@ -3,5 +3,5 @@
   "textures": {
       "cross": "slavicmod:block/celandine"
   },
-  "renderType": "cutout"
+  "render_type": "cutout"
 }

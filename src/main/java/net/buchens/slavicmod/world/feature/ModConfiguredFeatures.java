@@ -68,7 +68,7 @@ public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_
 
     public static final RegistryObject<ConfiguredFeature<?,?>> Celandine = CONFIGURED_FEATURES.register("celandine",
             () -> new ConfiguredFeature<>(Feature.FLOWER,
-                    new RandomPatchConfiguration(32, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                    new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                             new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CELANDINE.get())) ))));
 
 
