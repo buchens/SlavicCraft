@@ -11,6 +11,9 @@
     "slavicmod:nickel_ore",
     "slavicmod:deepslate_chrome_ore",
     "slavicmod:deepslate_manganese_ore",
-    "slavicmod:deepslate_nickel_ore"
+    "slavicmod:deepslate_nickel_ore",
+    "slavicmod:silver_ore",
+    "slavicmod:deepslate_silver_ore",
+    "slavicmod:silver_block"
   ]
 }

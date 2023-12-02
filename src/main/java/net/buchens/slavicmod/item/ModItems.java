@@ -35,6 +35,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> VANADIUM_INGOT = ITEMS.register("vanadium_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+    public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
