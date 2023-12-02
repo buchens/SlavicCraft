@@ -58,7 +58,7 @@ public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_
             () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_Manganese_Ore.get(), 8)));
 
     public static final RegistryObject<ConfiguredFeature<?,?>> Silver_Ore = CONFIGURED_FEATURES.register("silver_ore",
-            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_Silver_Ore.get(), 8)));
+            () -> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_Silver_Ore.get(), 5)));
 
 
     public static void register(IEventBus eventBus){
