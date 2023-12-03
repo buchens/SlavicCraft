@@ -3,6 +3,7 @@ package net.buchens.slavicmod;
 import com.mojang.logging.LogUtils;
 import net.buchens.slavicmod.block.ModBlocks;
 import net.buchens.slavicmod.item.ModItems;
+import net.buchens.slavicmod.loot.ModLootModifiers;
 import net.buchens.slavicmod.world.feature.ModConfiguredFeatures;
 import net.buchens.slavicmod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -39,6 +40,7 @@ public class SlavicMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         ModConfiguredFeatures.register(modEventBus);
