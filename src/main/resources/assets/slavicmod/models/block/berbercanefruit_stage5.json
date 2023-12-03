@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/crop",
+
+  "textures": {
+    "crop": "slavicmod:block/berbercanefruit_stage5",
+
+  },
+  "render_type": "cutout"
+}

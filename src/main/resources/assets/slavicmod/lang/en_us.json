@@ -27,6 +27,8 @@
   "item.slavicmod.steel_ingot": "Steel ingot",
   "item.slavicmod.silver_ingot": "Silver ingot",
   "item.slavicmod.vanadium_ingot": "Vanadium ingot",
+  "item.slavicmod.berbercanefruit": "Berbercane fruit",
+  "item.slavicmod.berbercanefruit_seed": "Berbercane fruit seed",
   "itemGroup.slaviccrafttab": "Slavic Craft",
   "block.slavicmod.steel_block": "Block of Steel",
   "block.slavicmod.silver_block": "Block of Silver",
@@ -45,7 +47,8 @@
   "block.slavicmod.deepslate_manganese_ore": "Deepslate Manganese Ore",
   "block.slavicmod.manganese_ore": "Manganese Ore",
   "block.slavicmod.celandine": "Celandine",
-  "block.slavicmod.potted_celandine": "Potted Celandine"
-
-
+  "block.slavicmod.potted_celandine": "Potted Celandine",
+  "block.slavicmod.white_myrtle": "white Myrtle",
+  "block.slavicmod.potted_white_myrtle": "Potted white Myrtle",
+  "block.slavicmod.berbercanefruit_crop": "Berbercane fruit crop"
 }

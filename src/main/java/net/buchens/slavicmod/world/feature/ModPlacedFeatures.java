@@ -45,6 +45,10 @@ public class ModPlacedFeatures {
     public static final RegistryObject<PlacedFeature> CELANDINE_PLACED = PLACED_FEATURES.register("celandine_placed",
             () -> new PlacedFeature(ModConfiguredFeatures.Celandine.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(16),
     InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
+    public static final RegistryObject<PlacedFeature> WHITE_MYRTLE_PLACED = PLACED_FEATURES.register("white_myrtle_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.White_myrtle.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(16),
+                    InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
+
 
 
 

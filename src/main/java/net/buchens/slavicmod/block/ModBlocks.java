@@ -1,5 +1,6 @@
 package net.buchens.slavicmod.block;
 
+import net.buchens.slavicmod.block.custom.BerbercanefruitCropBlock;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.*;
 import net.buchens.slavicmod.SlavicMod;
@@ -82,9 +83,20 @@ public class ModBlocks {
             () -> new FlowerBlock(MobEffects.ABSORPTION, 5,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.SLAVICCRAFT_TAB);
 
+    public static final RegistryObject<Block> WHITE_MYRTLE  = registerBlock("white_myrtle",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 5,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.SLAVICCRAFT_TAB);
+//KWIATY DONICZKOWANE
     public static final RegistryObject<Block> POTTED_CELANDINE = BLOCKS.register("potted_celandine",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CELANDINE,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> POTTED_WHITE_MYRTLE = BLOCKS.register("potted_white_myrtle",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_MYRTLE,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> BERBERCANEFRUIT_CROP = BLOCKS.register("berbercanefruit_crop",
+            () -> new BerbercanefruitCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

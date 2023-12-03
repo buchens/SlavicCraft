@@ -1,7 +1,10 @@
 package net.buchens.slavicmod.item;
 
 import net.buchens.slavicmod.SlavicMod;
+import net.buchens.slavicmod.block.ModBlocks;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -67,6 +70,16 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+
+    public static final RegistryObject<Item> BERBERCANEFRUIT_SEED = ITEMS.register("berbercanefruit_seed",
+            () -> new ItemNameBlockItem(ModBlocks.BERBERCANEFRUIT_CROP.get(),
+                    new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+
+    public static final RegistryObject<Item> BERBERCANEFRUIT = ITEMS.register("berbercanefruit",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)
+                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build() )) );
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

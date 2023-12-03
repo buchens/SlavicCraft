@@ -71,6 +71,11 @@ public static final Supplier<List<OreConfiguration.TargetBlockState>> OVERWORLD_
                     new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
                             new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.CELANDINE.get())) ))));
 
+    public static final RegistryObject<ConfiguredFeature<?,?>> White_myrtle = CONFIGURED_FEATURES.register("white_myrtle",
+            () -> new ConfiguredFeature<>(Feature.FLOWER,
+                    new RandomPatchConfiguration(10, 3, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                            new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.WHITE_MYRTLE.get())) ))));
+
 
     public static void register(IEventBus eventBus){
         CONFIGURED_FEATURES.register(eventBus);
