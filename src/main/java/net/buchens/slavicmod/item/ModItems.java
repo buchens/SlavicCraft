@@ -38,6 +38,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> BOAR_FUR = ITEMS.register("boar_fur",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+
+    public static final RegistryObject<Item> DROWNER_BRAIN = ITEMS.register("drowner_brain",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> BOAR_HELMET_COMPONENT = ITEMS.register("boar_helmet_component",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> BOAR_CHESTPLATE_COMPONENT = ITEMS.register("boar_chestplate_component",
