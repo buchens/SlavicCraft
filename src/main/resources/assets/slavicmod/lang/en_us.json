@@ -9,6 +9,12 @@
   "item.slavicmod.boar_fur": "Boar fur",
   "item.slavicmod.drowner_brain": "Drowner brain",
 
+
+  "item.slavicmod.boar_sword": "Boar sword",
+  "item.slavicmod.boar_pickaxe": "Boar pickaxe",
+  "item.slavicmod.boar_axe": "Boar axe",
+  "item.slavicmod.boar_hoe": "Boar hoe",
+  "item.slavicmod.boar_shovel": "Boar shovel",
   "item.slavicmod.boar_helmet_component": "Boar helmet component",
   "item.slavicmod.boar_chestplate_component": "Boar chestplate component",
   "item.slavicmod.boar_leggins_component": "Boar leggins component",

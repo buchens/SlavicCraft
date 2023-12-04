@@ -2,13 +2,16 @@ package net.buchens.slavicmod.item;
 
 import net.buchens.slavicmod.SlavicMod;
 import net.buchens.slavicmod.block.ModBlocks;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -82,13 +85,35 @@ public class ModItems {
     public static final RegistryObject<Item> BERBERCANEFRUIT = ITEMS.register("berbercanefruit",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)
                     .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build() )) );
+    public static final RegistryObject<SwordItem> BOAR_SWORD = ITEMS.register("boar_sword",
+            () -> new SwordItem(Tiers.BOAR, 5, 3.5f, props() ) );
+    public static final RegistryObject<PickaxeItem> BOAR_PICKAXE = ITEMS.register("boar_pickaxe",
+            () -> new PickaxeItem(Tiers.BOAR, 4, 3.5f, props() ) );
+    public static final RegistryObject<ShovelItem> BOAR_SHOVEL = ITEMS.register("boar_shovel",
+            () -> new ShovelItem(Tiers.BOAR, 3, 3.5f, props() ) );
+    public static final RegistryObject<AxeItem> BOAR_AXE = ITEMS.register("boar_axe",
+            () -> new AxeItem(Tiers.BOAR, 7, 3.5f, props() ) );
+    public static final RegistryObject<HoeItem> BOAR_HOE = ITEMS.register("boar_hoe",
+            () -> new HoeItem(Tiers.BOAR, 1, 3.5f, props() ) );
 
-
+    private static Item.Properties props() {
+        return new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB);
+    }
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
 
 
 
+    }
+    public static class Tiers {
+        public static final Tier BOAR = new ForgeTier(
+                4,
+                2000,
+                8f,
+                1f,
+                0,
+                null,
+                () -> Ingredient.of(ModItems.BOAR_FUR.get()));
     }
 }
