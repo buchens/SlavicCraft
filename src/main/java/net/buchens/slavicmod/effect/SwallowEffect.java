@@ -12,7 +12,7 @@ public class SwallowEffect extends MobEffect {
     @Override
     public void applyEffectTick(LivingEntity pLivingEntity, int pAmplifier) {
         if (!pLivingEntity.level.isClientSide()) {
-            pLivingEntity.heal(1.0f);
+            pLivingEntity.heal(0.09f);
         }
         super.applyEffectTick(pLivingEntity, pAmplifier);
     }
