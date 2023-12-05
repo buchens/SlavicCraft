@@ -1,7 +1,9 @@
 package net.buchens.slavicmod.item;
 
 import net.buchens.slavicmod.SlavicMod;
+import net.buchens.slavicmod.base.ModArmorMaterial;
 import net.buchens.slavicmod.block.ModBlocks;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
@@ -95,6 +97,14 @@ public class ModItems {
             () -> new AxeItem(Tiers.BOAR, 7, 3.5f, props() ) );
     public static final RegistryObject<HoeItem> BOAR_HOE = ITEMS.register("boar_hoe",
             () -> new HoeItem(Tiers.BOAR, 1, 3.5f, props() ) );
+    public static final RegistryObject<ArmorItem> REINFORCED_BOAR_HELMET = ITEMS.register("reinforced_boar_helmet",
+            () -> new ArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.HEAD, props() ) );
+    public static final RegistryObject<ArmorItem> REINFORCED_BOAR_CHESTPLATE = ITEMS.register("reinforced_boar_chestplate",
+            () -> new ArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.CHEST, props() ) );
+    public static final RegistryObject<ArmorItem> REINFORCED_BOAR_LEGGINGS = ITEMS.register("reinforced_boar_leggings",
+            () -> new ArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.LEGS, props() ) );
+    public static final RegistryObject<ArmorItem> REINFORCED_BOAR_BOOTS = ITEMS.register("reinforced_boar_boots",
+            () -> new ArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.FEET, props() ) );
 
     private static Item.Properties props() {
         return new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB);
@@ -115,5 +125,19 @@ public class ModItems {
                 0,
                 null,
                 () -> Ingredient.of(ModItems.BOAR_FUR.get()));
+    }
+    public static class ArmorTiers {
+        public static final ArmorMaterial REINFORCED_BOAR = new ModArmorMaterial(
+                "reinforced_boar",
+                500,
+                new int[]{3, 6, 8, 3},
+                10,
+                SoundEvents.ARMOR_EQUIP_CHAIN,
+                0.0F,
+                0.0F,
+                () -> Ingredient.of(ModItems.BOAR_FUR.get())
+        );
+
+
     }
 }

@@ -14,7 +14,12 @@
   "item.slavicmod.boar_pickaxe": "Boar pickaxe",
   "item.slavicmod.boar_axe": "Boar axe",
   "item.slavicmod.boar_hoe": "Boar hoe",
-  "item.slavicmod.boar_shovel": "Boar shovel",
+  "item.slavicmod.reinforced_boar_helmet": "Reinforced boar helmet",
+  "item.slavicmod.reinforced_boar_chestplate": "Reinforced boar chestplate",
+  "item.slavicmod.reinforced_boar_leggins": "Reinforced boar leggins",
+  "item.slavicmod.reinforced_boar_boots": "Reinforced boar boots",
+
+
   "item.slavicmod.boar_helmet_component": "Boar helmet component",
   "item.slavicmod.boar_chestplate_component": "Boar chestplate component",
   "item.slavicmod.boar_leggins_component": "Boar leggins component",
