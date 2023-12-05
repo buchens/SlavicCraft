@@ -9,6 +9,7 @@
   "item.slavicmod.boar_fur": "Boar fur",
   "item.slavicmod.drowner_brain": "Drowner brain",
   "item.slavicmod.alcohol": "Alcohol",
+  "item.slavicmod.swallow": "Swallow",
 
 
   "item.slavicmod.boar_sword": "Boar sword",
@@ -69,5 +70,7 @@
   "block.slavicmod.potted_celandine": "Potted Celandine",
   "block.slavicmod.white_myrtle": "white Myrtle",
   "block.slavicmod.potted_white_myrtle": "Potted white Myrtle",
-  "block.slavicmod.berbercanefruit_crop": "Berbercane fruit crop"
+  "block.slavicmod.berbercanefruit_crop": "Berbercane fruit crop",
+
+  "effect.slavicmod.swallow": "Swallow"
 }
