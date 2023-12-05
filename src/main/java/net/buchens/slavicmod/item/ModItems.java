@@ -3,6 +3,7 @@ package net.buchens.slavicmod.item;
 import net.buchens.slavicmod.SlavicMod;
 import net.buchens.slavicmod.base.ModArmorMaterial;
 import net.buchens.slavicmod.block.ModBlocks;
+import net.minecraft.client.gui.font.glyphs.BakedGlyph;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
@@ -13,6 +14,11 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+
+
+
 
 
 public class ModItems {
@@ -44,6 +50,8 @@ public class ModItems {
     public static final RegistryObject<Item> BOAR_FUR = ITEMS.register("boar_fur",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
 
+    public static final RegistryObject<Item> ALCOHOL = ITEMS.register("alcohol",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB))) ;
     public static final RegistryObject<Item> DROWNER_BRAIN = ITEMS.register("drowner_brain",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> BOAR_HELMET_COMPONENT = ITEMS.register("boar_helmet_component",
@@ -86,7 +94,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> BERBERCANEFRUIT = ITEMS.register("berbercanefruit",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)
-                    .food(new FoodProperties.Builder().nutrition(2).saturationMod(2f).build() )) );
+                    .food(new FoodProperties.Builder().nutrition(1).saturationMod(2f).build() )) );
     public static final RegistryObject<SwordItem> BOAR_SWORD = ITEMS.register("boar_sword",
             () -> new SwordItem(Tiers.BOAR, 5, 3.5f, props() ) );
     public static final RegistryObject<PickaxeItem> BOAR_PICKAXE = ITEMS.register("boar_pickaxe",
