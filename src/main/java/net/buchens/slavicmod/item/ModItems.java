@@ -115,6 +115,9 @@ public class ModItems {
     public static final RegistryObject<ArmorItem> REINFORCED_BOAR_BOOTS = ITEMS.register("reinforced_boar_boots",
             () -> new ArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.FEET, props() ) );
 
+    public static final RegistryObject<SwordItem> BEAR_SWORD = ITEMS.register("bear_sword",
+            () -> new SwordItem(Tiers.BEAR, 5, 3.5f, props() ) );
+
     private static Item.Properties props() {
         return new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB);
     }
@@ -134,6 +137,14 @@ public class ModItems {
                 0,
                 null,
                 () -> Ingredient.of(ModItems.BOAR_FUR.get()));
+        public static final Tier BEAR = new ForgeTier(
+                6,
+                2500,
+                8f,
+                1.5f,
+                10,
+                null,
+                () -> Ingredient.of(ModItems.BEAR_FUR.get()));
     }
     public static class ArmorTiers {
         public static final ArmorMaterial REINFORCED_BOAR = new ModArmorMaterial(
