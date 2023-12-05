@@ -25,6 +25,8 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, SlavicMod.MOD_ID);
 
+    public static final RegistryObject<Item> ALCOHOL = ITEMS.register("alcohol",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB))) ;
     public static final RegistryObject<Item> CHAINMAILBRAID = ITEMS.register("chainmailbraid",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> WOLF_FUR = ITEMS.register("wolf_fur",
@@ -50,8 +52,7 @@ public class ModItems {
     public static final RegistryObject<Item> BOAR_FUR = ITEMS.register("boar_fur",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
 
-    public static final RegistryObject<Item> ALCOHOL = ITEMS.register("alcohol",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB))) ;
+
     public static final RegistryObject<Item> DROWNER_BRAIN = ITEMS.register("drowner_brain",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
     public static final RegistryObject<Item> BOAR_HELMET_COMPONENT = ITEMS.register("boar_helmet_component",
