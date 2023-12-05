@@ -7,7 +7,7 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab SLAVICCRAFT_TAB = new CreativeModeTab("slaviccrafttab") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.CHAINMAILBRAID.get());
+            return new ItemStack(ModItems.DROWNER_BRAIN.get());
         }
     };
 }
