@@ -49,6 +49,14 @@ public class ModPlacedFeatures {
             () -> new PlacedFeature(ModConfiguredFeatures.White_myrtle.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(16),
                     InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
 
+    public static final RegistryObject<PlacedFeature> CORTINARIUS_PLACED = PLACED_FEATURES.register("cortinarius_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.Cortinarius.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(16),
+                    InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
+
+    public static final RegistryObject<PlacedFeature> MOLEYARROW_PLACED = PLACED_FEATURES.register("moleyarrow_placed",
+            () -> new PlacedFeature(ModConfiguredFeatures.Moleyarrow.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(16),
+                    InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
+
 
 
 

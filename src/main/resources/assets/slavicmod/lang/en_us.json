@@ -22,6 +22,7 @@
   "item.slavicmod.reinforced_boar_leggins": "Reinforced boar leggings",
   "item.slavicmod.reinforced_boar_boots": "Reinforced boar boots",
 
+"item.slavicmod.swallow_base": "Base for Swallow Potion",
 
 
   "item.slavicmod.bear_sword": "Bear sword",
@@ -72,6 +73,10 @@
   "block.slavicmod.manganese_ore": "Manganese Ore",
   "block.slavicmod.celandine": "Celandine",
   "block.slavicmod.potted_celandine": "Potted Celandine",
+  "block.slavicmod.cortinarius": "Cortinarius",
+  "block.slavicmod.potted_cortinarius": "Potted Cortinarius",
+  "block.slavicmod.moleyarrow": "Moleyarrow",
+  "block.slavicmod.potted_moleyarrow": "Potted Moleyarrow",
   "block.slavicmod.white_myrtle": "white Myrtle",
   "block.slavicmod.potted_white_myrtle": "Potted white Myrtle",
   "block.slavicmod.berbercanefruit_crop": "Berbercane fruit crop",

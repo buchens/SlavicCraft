@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#forge:is_plains",
+  "features": "slavicmod:cortinarius_placed",
+  "step": "vegetal_decoration"
+}

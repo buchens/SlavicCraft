@@ -6,9 +6,12 @@ import net.buchens.slavicmod.effect.ModEffects;
 import net.buchens.slavicmod.item.ModItems;
 import net.buchens.slavicmod.loot.ModLootModifiers;
 import net.buchens.slavicmod.potion.ModPotions;
+import net.buchens.slavicmod.util.BetterBrewingRecipe;
 import net.buchens.slavicmod.world.feature.ModConfiguredFeatures;
 import net.buchens.slavicmod.world.feature.ModPlacedFeatures;
 
+import net.minecraft.world.item.alchemy.Potions;
+import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
@@ -51,6 +54,12 @@ public class SlavicMod {
         event.enqueueWork(() -> {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CELANDINE.getId(), ModBlocks.POTTED_CELANDINE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WHITE_MYRTLE.getId(), ModBlocks.POTTED_WHITE_MYRTLE);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CORTINARIUS.getId(), ModBlocks.POTTED_CORTINARIUS);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.MOLEYARROW.getId(), ModBlocks.POTTED_MOLEYARROW);
+
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
+                    ModItems.SWALLOW_BASE.get(),  ModPotions.SWALLOW_POTION.get()));
         });
     }
 

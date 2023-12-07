@@ -86,6 +86,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> WHITE_MYRTLE  = registerBlock("white_myrtle",
             () -> new FlowerBlock(MobEffects.ABSORPTION, 5,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.SLAVICCRAFT_TAB);
+    public static final RegistryObject<Block> CORTINARIUS  = registerBlock("cortinarius",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 5,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.SLAVICCRAFT_TAB);
+
+    public static final RegistryObject<Block> MOLEYARROW  = registerBlock("moleyarrow",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 5,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.SLAVICCRAFT_TAB);
+
 //KWIATY DONICZKOWANE
     public static final RegistryObject<Block> POTTED_CELANDINE = BLOCKS.register("potted_celandine",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CELANDINE,
@@ -93,6 +101,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> POTTED_WHITE_MYRTLE = BLOCKS.register("potted_white_myrtle",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.WHITE_MYRTLE,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
+    public static final RegistryObject<Block> POTTED_CORTINARIUS = BLOCKS.register("potted_cortinarius",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CORTINARIUS,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+    public static final RegistryObject<Block> POTTED_MOLEYARROW = BLOCKS.register("potted_moleyarrow",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MOLEYARROW,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 
     public static final RegistryObject<Block> BERBERCANEFRUIT_CROP = BLOCKS.register("berbercanefruit_crop",

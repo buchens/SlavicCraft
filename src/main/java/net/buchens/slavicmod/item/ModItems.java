@@ -88,6 +88,9 @@ public class ModItems {
     public static final RegistryObject<Item> SILVER_INGOT = ITEMS.register("silver_ingot",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
 
+    public static final RegistryObject<Item> SWALLOW_BASE = ITEMS.register("swallow_base",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
+
 
     public static final RegistryObject<Item> BERBERCANEFRUIT_SEED = ITEMS.register("berbercanefruit_seed",
             () -> new ItemNameBlockItem(ModBlocks.BERBERCANEFRUIT_CROP.get(),

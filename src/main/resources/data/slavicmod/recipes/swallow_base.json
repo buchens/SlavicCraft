@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "slavicmod:white_myrtle"
+    },
+    {
+      "item": "slavicmod:celandine"
+    },
+    {
+      "item": "slavicmod:drowner_brain"
+    },
+    {
+      "item": "slavicmod:alcohol"
+    }
+
+  ],
+  "result": {
+    "count": 1,
+    "item": "slavicmod:swallow_base"
+  }
+}
