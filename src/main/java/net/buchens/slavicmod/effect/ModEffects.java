@@ -13,7 +13,7 @@ public class ModEffects {
             = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, SlavicMod.MOD_ID);
 
     public static final RegistryObject<MobEffect> SWALLOW = MOB_EFFECTS.register("swallow",
-            () -> new SwallowEffect(MobEffectCategory.HARMFUL, 3124687));
+            () -> new SwallowEffect(MobEffectCategory.HARMFUL, 0xFFA500));
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }
