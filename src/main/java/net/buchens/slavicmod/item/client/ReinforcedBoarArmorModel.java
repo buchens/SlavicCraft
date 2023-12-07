@@ -1,23 +1,24 @@
 package net.buchens.slavicmod.item.client;
 
+import net.buchens.slavicmod.SlavicMod;
+import net.buchens.slavicmod.item.custom.ReinforcedBoarArmorItem;
 import net.minecraft.resources.ResourceLocation;
-import software.bernie.example.item.GeckoArmorItem;
-import software.bernie.geckolib3.GeckoLib;
 import software.bernie.geckolib3.model.AnimatedGeoModel;
 
-public class ReinforcedBoarArmorModel extends AnimatedGeoModel<GeckoArmorItem> {
+public class ReinforcedBoarArmorModel extends AnimatedGeoModel<ReinforcedBoarArmorItem> {
+
 	@Override
-	public ResourceLocation getModelResource(GeckoArmorItem object) {
-		return new ResourceLocation(GeckoLib.ModID, "geo/reinforced_boar_armor.geo.json");
+	public ResourceLocation getModelResource(ReinforcedBoarArmorItem object) {
+		return new ResourceLocation(SlavicMod.MOD_ID, "geo/reinforced_boar_armor.geo.json");
 	}
 
 	@Override
-	public ResourceLocation getTextureResource(GeckoArmorItem object) {
-		return new ResourceLocation(GeckoLib.ModID, "textures/item/reinforced_boar_armor.png");
+	public ResourceLocation getTextureResource(ReinforcedBoarArmorItem object) {
+		return new ResourceLocation(SlavicMod.MOD_ID, "textures/armor/reinforced_boar_armor.png");
 	}
 
 	@Override
-	public ResourceLocation getAnimationResource(GeckoArmorItem animatable) {
-		return new ResourceLocation(GeckoLib.ModID, "animations/reinforced_boar_armor.animation.json");
+	public ResourceLocation getAnimationResource(ReinforcedBoarArmorItem animatable) {
+		return new ResourceLocation(SlavicMod.MOD_ID, "animations/reinforced_boar_armor.animation.json");
 	}
 }
