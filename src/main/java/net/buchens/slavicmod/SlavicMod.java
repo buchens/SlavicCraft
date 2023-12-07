@@ -5,6 +5,7 @@ import net.buchens.slavicmod.block.ModBlocks;
 import net.buchens.slavicmod.effect.ModEffects;
 import net.buchens.slavicmod.item.ModItems;
 import net.buchens.slavicmod.loot.ModLootModifiers;
+import net.buchens.slavicmod.potion.ModPotions;
 import net.buchens.slavicmod.world.feature.ModConfiguredFeatures;
 import net.buchens.slavicmod.world.feature.ModPlacedFeatures;
 
@@ -40,6 +41,8 @@ public class SlavicMod {
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
         ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
