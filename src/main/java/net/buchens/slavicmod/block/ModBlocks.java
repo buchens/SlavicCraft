@@ -94,6 +94,10 @@ public class ModBlocks {
             () -> new FlowerBlock(MobEffects.ABSORPTION, 5,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.SLAVICCRAFT_TAB);
 
+    public static final RegistryObject<Block> ALLSPICE  = registerBlock("allspice",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 5,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.SLAVICCRAFT_TAB);
+
 //KWIATY DONICZKOWANE
     public static final RegistryObject<Block> POTTED_CELANDINE = BLOCKS.register("potted_celandine",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CELANDINE,
@@ -107,6 +111,9 @@ public class ModBlocks {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CORTINARIUS,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)));
     public static final RegistryObject<Block> POTTED_MOLEYARROW = BLOCKS.register("potted_moleyarrow",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MOLEYARROW,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+    public static final RegistryObject<Block> POTTED_ALLSPICE = BLOCKS.register("potted_allspice",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MOLEYARROW,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)));
 

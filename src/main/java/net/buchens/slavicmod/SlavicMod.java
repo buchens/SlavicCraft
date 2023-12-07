@@ -56,6 +56,7 @@ public class SlavicMod {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WHITE_MYRTLE.getId(), ModBlocks.POTTED_WHITE_MYRTLE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CORTINARIUS.getId(), ModBlocks.POTTED_CORTINARIUS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.MOLEYARROW.getId(), ModBlocks.POTTED_MOLEYARROW);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.ALLSPICE.getId(), ModBlocks.POTTED_ALLSPICE);
 
 
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
