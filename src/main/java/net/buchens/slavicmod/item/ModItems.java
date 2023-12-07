@@ -3,6 +3,7 @@ package net.buchens.slavicmod.item;
 import net.buchens.slavicmod.SlavicMod;
 import net.buchens.slavicmod.base.ModArmorMaterial;
 import net.buchens.slavicmod.block.ModBlocks;
+import net.buchens.slavicmod.item.custom.ReinforcedBoarArmorItem;
 import net.minecraft.client.gui.font.glyphs.BakedGlyph;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -107,13 +108,13 @@ public class ModItems {
     public static final RegistryObject<HoeItem> BOAR_HOE = ITEMS.register("boar_hoe",
             () -> new HoeItem(Tiers.BOAR, 1, 3.5f, props() ) );
     public static final RegistryObject<ArmorItem> REINFORCED_BOAR_HELMET = ITEMS.register("reinforced_boar_helmet",
-            () -> new ArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.HEAD, props() ) );
+            () -> new ReinforcedBoarArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.HEAD, props() ) );
     public static final RegistryObject<ArmorItem> REINFORCED_BOAR_CHESTPLATE = ITEMS.register("reinforced_boar_chestplate",
-            () -> new ArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.CHEST, props() ) );
+            () -> new ReinforcedBoarArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.CHEST, props() ) );
     public static final RegistryObject<ArmorItem> REINFORCED_BOAR_LEGGINGS = ITEMS.register("reinforced_boar_leggings",
-            () -> new ArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.LEGS, props() ) );
+            () -> new ReinforcedBoarArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.LEGS, props() ) );
     public static final RegistryObject<ArmorItem> REINFORCED_BOAR_BOOTS = ITEMS.register("reinforced_boar_boots",
-            () -> new ArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.FEET, props() ) );
+            () -> new ReinforcedBoarArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.FEET, props() ) );
 
     public static final RegistryObject<SwordItem> BEAR_SWORD = ITEMS.register("bear_sword",
             () -> new SwordItem(Tiers.BEAR, 5, 3.5f, props() ) );
