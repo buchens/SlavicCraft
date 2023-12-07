@@ -20,6 +20,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import software.bernie.geckolib3.GeckoLib;
 
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -36,6 +37,7 @@ public class SlavicMod {
         ModBlocks.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
+        GeckoLib.initialize();
         MinecraftForge.EVENT_BUS.register(this);
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
