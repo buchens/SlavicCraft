@@ -3,6 +3,8 @@ package net.buchens.slavicmod;
 import com.mojang.logging.LogUtils;
 import net.buchens.slavicmod.block.ModBlocks;
 import net.buchens.slavicmod.effect.ModEffects;
+import net.buchens.slavicmod.entity.ModEntityTypes;
+import net.buchens.slavicmod.entity.client.DrownerRenderer;
 import net.buchens.slavicmod.item.ModItems;
 import net.buchens.slavicmod.loot.ModLootModifiers;
 import net.buchens.slavicmod.potion.ModPotions;
@@ -10,6 +12,8 @@ import net.buchens.slavicmod.util.BetterBrewingRecipe;
 import net.buchens.slavicmod.world.feature.ModConfiguredFeatures;
 import net.buchens.slavicmod.world.feature.ModPlacedFeatures;
 
+import net.minecraft.client.renderer.entity.DrownedRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -47,6 +51,7 @@ public class SlavicMod {
         ModPlacedFeatures.register(modEventBus);
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
+        ModEntityTypes.register(modEventBus);
 
     }
 
@@ -72,6 +77,7 @@ public class SlavicMod {
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntityTypes.DROWNER.get(), DrownerRenderer::new);
 
         }
     }

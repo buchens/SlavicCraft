@@ -3,6 +3,7 @@ package net.buchens.slavicmod.item;
 import net.buchens.slavicmod.SlavicMod;
 import net.buchens.slavicmod.base.ModArmorMaterial;
 import net.buchens.slavicmod.block.ModBlocks;
+import net.buchens.slavicmod.entity.ModEntityTypes;
 import net.buchens.slavicmod.item.custom.ReinforcedBoarArmorItem;
 import net.minecraft.client.gui.font.glyphs.BakedGlyph;
 import net.minecraft.sounds.SoundEvents;
@@ -10,6 +11,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -53,6 +55,9 @@ public class ModItems {
     public static final RegistryObject<Item> BOAR_FUR = ITEMS.register("boar_fur",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
 
+    public static final RegistryObject<Item> DROWNER_SPAWN_EGG = ITEMS.register("drowner_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.DROWNER, 0x314E82, 0xFF9E24,
+                    new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)));
 
     public static final RegistryObject<Item> DROWNER_BRAIN = ITEMS.register("drowner_brain",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );

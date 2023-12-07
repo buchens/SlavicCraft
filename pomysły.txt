@@ -1,7 +1,7 @@
-1. Ruda żelaza + naturalny spawn rud (all)
-2. przepalanie na stal
+1. Ruda żelaza + naturalny spawn rud (all) --
+2. przepalanie na stal --
 3. Zbroja i itemy ze stali i srebra
-4. potiony + rośliny nowe
+4. potiony + rośliny nowe --
 5. customowe villagery (waluta) (zielarz, wzmocniony kowal, kupiec + questy (opcjonalne))
 6. Legendarne itemy
 7. dodanie gryfa z innych mobów plus customowy lootdrop + zatrucie
