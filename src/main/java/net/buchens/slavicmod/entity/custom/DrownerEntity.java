@@ -18,6 +18,7 @@ import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import software.bernie.geckolib3.core.AnimationState;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
@@ -33,10 +34,10 @@ public class DrownerEntity extends Monster implements IAnimatable {
     }
     public static AttributeSupplier setAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 20.0D)
-                .add(Attributes.ATTACK_DAMAGE, 3.0f)
+                .add(Attributes.MAX_HEALTH, 25.0D)
+                .add(Attributes.ATTACK_DAMAGE, 2.5f)
                 .add(Attributes.ATTACK_SPEED, 2.0f)
-                .add(Attributes.MOVEMENT_SPEED, 0.6f).build();
+                .add(Attributes.MOVEMENT_SPEED, 0.4f).build();
     }
 
     @Override
@@ -57,7 +58,16 @@ public class DrownerEntity extends Monster implements IAnimatable {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.drowner.walk", true));
             return PlayState.CONTINUE;
         }
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.drowner.new", true));
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.drowner.idle", true));
+        return PlayState.CONTINUE;
+    }
+    private PlayState attackPredicate(AnimationEvent event) {
+        if (this.swinging && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
+            event.getController().markNeedsReload();
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.drowner.attack", false));
+            this.swinging = false;
+        }
+
         return PlayState.CONTINUE;
     }
 
@@ -65,7 +75,10 @@ public class DrownerEntity extends Monster implements IAnimatable {
     @Override
     public void registerControllers(AnimationData data) {
         data.addAnimationController(new AnimationController<DrownerEntity>(this, "controller", 0, this::predicate));
+        data.addAnimationController(new AnimationController<DrownerEntity>(this, "attackController", 0, this::attackPredicate));
     }
+
+
 
 
     @Override

@@ -1,0 +1,14 @@
+{
+  "type": "slavicmod:drowner",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "slavicmod:drowner_brain"
+        }
+      ]
+    }
+  ]
+}
