@@ -34,10 +34,10 @@ public class DrownerEntity extends Monster implements IAnimatable {
     }
     public static AttributeSupplier setAttributes() {
         return Monster.createMonsterAttributes()
-                .add(Attributes.MAX_HEALTH, 25.0D)
-                .add(Attributes.ATTACK_DAMAGE, 2.5f)
+                .add(Attributes.MAX_HEALTH, 30.0D)
+                .add(Attributes.ATTACK_DAMAGE, 3.5f)
                 .add(Attributes.ATTACK_SPEED, 2.0f)
-                .add(Attributes.MOVEMENT_SPEED, 0.4f).build();
+                .add(Attributes.MOVEMENT_SPEED, 0.5f).build();
     }
 
     @Override
