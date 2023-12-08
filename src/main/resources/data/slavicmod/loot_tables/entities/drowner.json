@@ -12,7 +12,7 @@
         {
           "type": "minecraft:item",
           "name": "slavicmod:drowner_brain",
-          "weight": 25
+          "weight": 17.5
         }
       ]
     }

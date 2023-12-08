@@ -3,7 +3,12 @@ package net.buchens.slavicmod.entity.custom;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.Difficulty;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
@@ -39,6 +44,26 @@ public class DrownerEntity extends Monster implements IAnimatable {
                 .add(Attributes.ATTACK_SPEED, 2.0f)
                 .add(Attributes.MOVEMENT_SPEED, 0.5f).build();
     }
+    public boolean doHurtTarget(Entity p_32257_) {
+        if (super.doHurtTarget(p_32257_)) {
+            if (p_32257_ instanceof LivingEntity) {
+                int i = 0;
+                if (this.level.getDifficulty() == Difficulty.NORMAL) {
+                    i = 7;
+                } else if (this.level.getDifficulty() == Difficulty.HARD) {
+                    i = 15;
+                }
+
+                if (i > 0 && Math.random() < 0.42) {
+                    ((LivingEntity)p_32257_).addEffect(new MobEffectInstance(MobEffects.WITHER, i * 15, 0), this);
+                }
+            }
+
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     @Override
     protected void registerGoals() {
@@ -65,6 +90,7 @@ public class DrownerEntity extends Monster implements IAnimatable {
         if (this.swinging && event.getController().getAnimationState().equals(AnimationState.Stopped)) {
             event.getController().markNeedsReload();
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.drowner.attack", false));
+
             this.swinging = false;
         }
 
