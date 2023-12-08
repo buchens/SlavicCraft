@@ -14,6 +14,9 @@ public class ModEffects {
 
     public static final RegistryObject<MobEffect> SWALLOW = MOB_EFFECTS.register("swallow",
             () -> new SwallowEffect(MobEffectCategory.HARMFUL, 0xFFA500));
+
+    public static final RegistryObject<MobEffect> BLIZZARD = MOB_EFFECTS.register("blizzard",
+            () -> new BlizzardEffect(MobEffectCategory.HARMFUL, 3124687));
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

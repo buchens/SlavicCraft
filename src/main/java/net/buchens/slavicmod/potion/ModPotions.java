@@ -17,6 +17,9 @@ public class ModPotions {
     public static final RegistryObject<Potion> SWALLOW_POTION = POTIONS.register("swallow_potion",
             ()-> new Potion(new MobEffectInstance(ModEffects.SWALLOW.get(), 200, 0)));
 
+    public static final RegistryObject<Potion> BLIZZARD_POTION = POTIONS.register("blizzard_potion",
+            ()-> new Potion(new MobEffectInstance(ModEffects.BLIZZARD.get(), 200, 0)));
+
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);
     }

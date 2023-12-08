@@ -72,6 +72,9 @@ public class SlavicMod {
 
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
                     ModItems.SWALLOW_BASE.get(),  ModPotions.SWALLOW_POTION.get()));
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
+                    ModItems.BLIZZARD_BASE.get(),  ModPotions.BLIZZARD_POTION.get()));
         });
     }
 

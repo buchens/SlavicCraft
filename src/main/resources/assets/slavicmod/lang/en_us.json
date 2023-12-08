@@ -23,6 +23,7 @@
   "item.slavicmod.reinforced_boar_boots": "Reinforced boar boots",
 
 "item.slavicmod.swallow_base": "Base for Swallow Potion",
+  "item.slavicmod.blizzard_base": "Base for Blizzard Potion",
 
 
   "item.slavicmod.bear_sword": "Bear sword",
@@ -49,11 +50,15 @@
   "item.slavicmod.vanadium_ingot": "Vanadium ingot",
   "item.slavicmod.berbercanefruit": "Berbercane fruit",
   "item.slavicmod.berbercanefruit_seed": "Berbercane fruit seed",
-  "item.slavicmod.drowner_brain": "Drowner brain",
+
   "item.minecraft.potion.effect.swallow_potion": "Swallow Potion",
   "item.minecraft.splash_potion.effect.swallow_potion": "Splash Swallow Potion",
   "item.minecraft.lingering_potion.effect.swallow_potion": "Lingering Swallow Potion",
   "item.minecraft.tipped_arrow.effect.swallow_potion": "Swallow Arrow",
+  "item.minecraft.potion.effect.blizzard_potion": "Blizzard Potion",
+  "item.minecraft.splash_potion.effect.blizzard_potion": "Splash Blizzard Potion",
+  "item.minecraft.lingering_potion.effect.blizzard_potion": "Lingering Blizzard Potion",
+  "item.minecraft.tipped_arrow.effect.blizzard_potion": "Blizzard Arrow",
   "itemGroup.slaviccrafttab": "Slavic Craft",
   "block.slavicmod.steel_block": "Block of Steel",
   "block.slavicmod.silver_block": "Block of Silver",
@@ -83,5 +88,6 @@
   "block.slavicmod.potted_white_myrtle": "Potted white Myrtle",
   "block.slavicmod.berbercanefruit_crop": "Berbercane fruit crop",
 
-  "effect.slavicmod.swallow": "Swallow"
+  "effect.slavicmod.swallow": "Swallow",
+  "effect.slavicmod.blizzard": "Blizzard"
 }
