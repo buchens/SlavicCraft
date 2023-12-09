@@ -4,6 +4,7 @@ import net.buchens.slavicmod.SlavicMod;
 import net.buchens.slavicmod.base.ModArmorMaterial;
 import net.buchens.slavicmod.block.ModBlocks;
 import net.buchens.slavicmod.entity.ModEntityTypes;
+import net.buchens.slavicmod.item.custom.MightyHammerOfVeles;
 import net.buchens.slavicmod.item.custom.ReinforcedBoarArmorItem;
 import net.minecraft.client.gui.font.glyphs.BakedGlyph;
 import net.minecraft.sounds.SoundEvents;
@@ -25,8 +26,13 @@ import net.minecraft.world.effect.MobEffects;
 
 
 public class ModItems {
+
+
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, SlavicMod.MOD_ID);
+
+    public static final RegistryObject<Item> MIGHTY_HAMMER_OF_VELES = ITEMS.register("mighty_hammer_of_veles",
+            () -> new MightyHammerOfVeles(Tiers.VELES, 10, -3.0f, props() ) );
 
     public static final RegistryObject<Item> ALCOHOL = ITEMS.register("alcohol",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB))) ;
@@ -108,15 +114,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)
                     .food(new FoodProperties.Builder().nutrition(1).saturationMod(2f).build() )) );
     public static final RegistryObject<SwordItem> BOAR_SWORD = ITEMS.register("boar_sword",
-            () -> new SwordItem(Tiers.BOAR, 5, 3.5f, props() ) );
-    public static final RegistryObject<PickaxeItem> BOAR_PICKAXE = ITEMS.register("boar_pickaxe",
-            () -> new PickaxeItem(Tiers.BOAR, 4, 3.5f, props() ) );
-    public static final RegistryObject<ShovelItem> BOAR_SHOVEL = ITEMS.register("boar_shovel",
-            () -> new ShovelItem(Tiers.BOAR, 3, 3.5f, props() ) );
-    public static final RegistryObject<AxeItem> BOAR_AXE = ITEMS.register("boar_axe",
-            () -> new AxeItem(Tiers.BOAR, 7, 3.5f, props() ) );
-    public static final RegistryObject<HoeItem> BOAR_HOE = ITEMS.register("boar_hoe",
-            () -> new HoeItem(Tiers.BOAR, 1, 3.5f, props() ) );
+            () -> new SwordItem(Tiers.BOAR, 5, -2.0f, props() ) );
+
     public static final RegistryObject<ArmorItem> REINFORCED_BOAR_HELMET = ITEMS.register("reinforced_boar_helmet",
             () -> new ReinforcedBoarArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.HEAD, props() ) );
     public static final RegistryObject<ArmorItem> REINFORCED_BOAR_CHESTPLATE = ITEMS.register("reinforced_boar_chestplate",
@@ -127,7 +126,7 @@ public class ModItems {
             () -> new ReinforcedBoarArmorItem(ArmorTiers.REINFORCED_BOAR, EquipmentSlot.FEET, props() ) );
 
     public static final RegistryObject<SwordItem> BEAR_SWORD = ITEMS.register("bear_sword",
-            () -> new SwordItem(Tiers.BEAR, 5, 3.5f, props() ) );
+            () -> new SwordItem(Tiers.BEAR, 5, -2.0f, props() ) );
 
     private static Item.Properties props() {
         return new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB);
@@ -148,6 +147,14 @@ public class ModItems {
                 0,
                 null,
                 () -> Ingredient.of(ModItems.BOAR_FUR.get()));
+        public static final Tier VELES = new ForgeTier(
+                5,
+                20000,
+                0.1f,
+                5f,
+                5,
+                null,
+                () -> Ingredient.of(ModBlocks.STEEL_BLOCK.get()));
         public static final Tier BEAR = new ForgeTier(
                 6,
                 2500,
