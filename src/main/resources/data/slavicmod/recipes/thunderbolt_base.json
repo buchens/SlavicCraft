@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "slavicmod:cortinarius"
+    },
+    {
+      "item": "slavicmod:verbena"
+    },
+    {
+      "item": "slavicmod:moleyarrow"
+    },
+    {
+      "item": "slavicmod:alcohol"
+    },
+    {
+      "item": "slavicmod:drowner_brain"
+    }
+
+  ],
+  "result": {
+    "count": 1,
+    "item": "slavicmod:thunderbolt_base"
+  }
+}

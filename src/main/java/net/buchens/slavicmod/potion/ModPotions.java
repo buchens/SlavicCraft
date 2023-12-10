@@ -20,6 +20,9 @@ public class ModPotions {
     public static final RegistryObject<Potion> BLIZZARD_POTION = POTIONS.register("blizzard_potion",
             ()-> new Potion(new MobEffectInstance(ModEffects.BLIZZARD.get(), 200, 0)));
 
+    public static final RegistryObject<Potion> THUNDERBOLT_POTION = POTIONS.register("thunderbolt_potion",
+            ()-> new Potion(new MobEffectInstance(ModEffects.THUNDERBOLT.get(), 200, 0)));
+
     public static void register(IEventBus eventBus) {
         POTIONS.register(eventBus);
     }

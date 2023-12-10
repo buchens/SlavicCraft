@@ -68,6 +68,7 @@ public class SlavicMod {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CORTINARIUS.getId(), ModBlocks.POTTED_CORTINARIUS);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.MOLEYARROW.getId(), ModBlocks.POTTED_MOLEYARROW);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.ALLSPICE.getId(), ModBlocks.POTTED_ALLSPICE);
+            ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VERBENA.getId(), ModBlocks.POTTED_VERBENA);
 
 
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
@@ -75,6 +76,9 @@ public class SlavicMod {
 
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
                     ModItems.BLIZZARD_BASE.get(),  ModPotions.BLIZZARD_POTION.get()));
+
+            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
+                    ModItems.THUNDERBOLT_BASE.get(),  ModPotions.THUNDERBOLT_POTION.get()));
         });
     }
 

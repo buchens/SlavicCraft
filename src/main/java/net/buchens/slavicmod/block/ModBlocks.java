@@ -98,6 +98,9 @@ public class ModBlocks {
             () -> new FlowerBlock(MobEffects.ABSORPTION, 5,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.SLAVICCRAFT_TAB);
 
+    public static final RegistryObject<Block> VERBENA  = registerBlock("verbena",
+            () -> new FlowerBlock(MobEffects.ABSORPTION, 5,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)), ModCreativeModeTab.SLAVICCRAFT_TAB);
 //KWIATY DONICZKOWANE
     public static final RegistryObject<Block> POTTED_CELANDINE = BLOCKS.register("potted_celandine",
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.CELANDINE,
@@ -114,8 +117,12 @@ public class ModBlocks {
             () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MOLEYARROW,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)));
     public static final RegistryObject<Block> POTTED_ALLSPICE = BLOCKS.register("potted_allspice",
-            () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.MOLEYARROW,
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.ALLSPICE,
                     BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+    public static final RegistryObject<Block> POTTED_VERBENA = BLOCKS.register("potted_verbena",
+            () -> new FlowerPotBlock(() -> ((FlowerPotBlock)Blocks.FLOWER_POT), ModBlocks.VERBENA,
+                    BlockBehaviour.Properties.copy(Blocks.DANDELION)));
+
 
     public static final RegistryObject<Block> BERBERCANEFRUIT_CROP = BLOCKS.register("berbercanefruit_crop",
             () -> new BerbercanefruitCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
