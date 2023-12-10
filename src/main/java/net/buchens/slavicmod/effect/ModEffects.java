@@ -17,6 +17,8 @@ public class ModEffects {
 
     public static final RegistryObject<MobEffect> BLIZZARD = MOB_EFFECTS.register("blizzard",
             () -> new BlizzardEffect(MobEffectCategory.HARMFUL, 3124687));
+    public static final RegistryObject<MobEffect> THUNDERBOLT = MOB_EFFECTS.register("thunderbolt",
+            () -> new ThunderboltEffect(MobEffectCategory.HARMFUL, 0x00FF00));
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);
     }

@@ -26,6 +26,8 @@
 
 "item.slavicmod.swallow_base": "Base for Swallow Potion",
   "item.slavicmod.blizzard_base": "Base for Blizzard Potion",
+  "item.slavicmod.thunderbolt_base": "Base for Thunderbolt Potion",
+
 
 
   "item.slavicmod.bear_sword": "Bear sword",
@@ -61,6 +63,10 @@
   "item.minecraft.splash_potion.effect.blizzard_potion": "Splash Blizzard Potion",
   "item.minecraft.lingering_potion.effect.blizzard_potion": "Lingering Blizzard Potion",
   "item.minecraft.tipped_arrow.effect.blizzard_potion": "Blizzard Arrow",
+  "item.minecraft.potion.effect.thunderbolt_potion": "Thunderbolt Potion",
+  "item.minecraft.splash_potion.effect.thunderbolt_potion": "Splash Thunderbolt Potion",
+  "item.minecraft.lingering_potion.effect.thunderbolt_potion": "Lingering Thunderbolt Potion",
+  "item.minecraft.tipped_arrow.effect.thunderbolt_potion": "Thunderbolt Arrow",
   "itemGroup.slaviccrafttab": "Slavic Craft",
   "block.slavicmod.steel_block": "Block of Steel",
   "block.slavicmod.silver_block": "Block of Silver",
@@ -89,7 +95,10 @@
   "block.slavicmod.white_myrtle": "white Myrtle",
   "block.slavicmod.potted_white_myrtle": "Potted white Myrtle",
   "block.slavicmod.berbercanefruit_crop": "Berbercane fruit crop",
+  "block.slavicmod.verbena": "Verbena",
+  "block.slavicmod.potted_verbena": "Potted Verbena",
 
   "effect.slavicmod.swallow": "Swallow",
-  "effect.slavicmod.blizzard": "Blizzard"
+  "effect.slavicmod.blizzard": "Blizzard",
+  "effect.slavicmod.thunderbolt": "Thunderbolt"
 }
