@@ -5,6 +5,7 @@ import net.buchens.slavicmod.base.ModArmorMaterial;
 import net.buchens.slavicmod.block.ModBlocks;
 import net.buchens.slavicmod.entity.ModEntityTypes;
 import net.buchens.slavicmod.item.custom.MightyHammerOfVeles;
+import net.buchens.slavicmod.item.custom.PerunsLightningSword;
 import net.buchens.slavicmod.item.custom.ReinforcedBoarArmorItem;
 import net.minecraft.client.gui.font.glyphs.BakedGlyph;
 import net.minecraft.sounds.SoundEvents;
@@ -33,6 +34,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> MIGHTY_HAMMER_OF_VELES = ITEMS.register("mighty_hammer_of_veles",
             () -> new MightyHammerOfVeles(Tiers.VELES, 10, -3.0f, props() ) );
+    public static final RegistryObject<Item> PERUNS_LIGHTNING_SWORD = ITEMS.register("peruns_lightning_sword",
+            () -> new PerunsLightningSword(Tiers.PERUN, 8, -1.5f, props() ) );
 
     public static final RegistryObject<Item> ALCOHOL = ITEMS.register("alcohol",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB))) ;
@@ -150,6 +153,14 @@ public class ModItems {
                 0,
                 null,
                 () -> Ingredient.of(ModItems.BOAR_FUR.get()));
+        public static final Tier PERUN = new ForgeTier(
+                10,
+                2500,
+                8f,
+                4f,
+                10,
+                null,
+                () -> Ingredient.of(ModBlocks.SILVER_BLOCK.get()));
         public static final Tier VELES = new ForgeTier(
                 5,
                 20000,
