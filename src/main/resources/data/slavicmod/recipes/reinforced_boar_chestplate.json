@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:chainmail_chestplate"
+    },
+    {
+      "item": "slavicmod:boar_chestplate_component"
+    }
+
+  ],
+  "result": {
+    "count": 1,
+    "item": "slavicmod:reinforced_boar_chestplate"
+  }
+}

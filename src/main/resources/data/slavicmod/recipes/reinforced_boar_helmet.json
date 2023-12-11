@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:chainmail_helmet"
+    },
+    {
+      "item": "slavicmod:boar_helmet_component"
+    }
+
+  ],
+  "result": {
+    "count": 1,
+    "item": "slavicmod:reinforced_boar_helmet"
+  }
+}

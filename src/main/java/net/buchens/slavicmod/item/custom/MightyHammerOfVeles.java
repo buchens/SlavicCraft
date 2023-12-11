@@ -25,39 +25,15 @@ public class MightyHammerOfVeles extends SwordItem {
 
     public MightyHammerOfVeles(Tier tier, int i, float v, Properties properties) {
         super(tier, i, v, properties);
-    }
 
+    }
 
 
         private static final int USE_DURATION = 1;
 
 
 
-        @Override
-        public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
-            super.finishUsingItem(stack, level, entity);
 
-            Player player = entity instanceof Player ? (Player) entity : null;
-
-            if (entity instanceof ServerPlayer serverplayer && !level.isClientSide()) {
-
-
-
-
-
-
-            }
-
-            if (player != null) {
-                player.awardStat(Stats.ITEM_USED.get(this));
-                if (!player.getAbilities().instabuild) {
-                    stack.shrink(1);
-                }
-            }
-
-            entity.gameEvent(GameEvent.EAT);
-            return stack;
-        }
 
         @Override
         public int getUseDuration(ItemStack stack) {
@@ -92,15 +68,7 @@ public class MightyHammerOfVeles extends SwordItem {
                 }
             }
 
-            // Spawn particles
-            for (int i = 0; i < 10; i++) {
-                double t = i / 9.0; // Calculate a value between 0 and 1 to represent the progress along the line
-                double x = start.x + (end.x - start.x) * t;
-                double y = start.y + (end.y - start.y) * t;
-                double z = start.z + (end.z - start.z) * t;
 
-                level.addParticle(ParticleTypes.BUBBLE, x, y, z, 0, 0, 0);
-            }
 
 
             }

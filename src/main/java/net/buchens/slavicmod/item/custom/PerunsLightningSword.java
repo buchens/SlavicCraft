@@ -32,26 +32,7 @@ public class PerunsLightningSword extends SwordItem {
         super(tier, i, v, properties);
     }
     public static final int MAX_DISTANCE = 2;
-    @Override
-    public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity entity) {
-        super.finishUsingItem(stack, level, entity);
 
-        Player player = entity instanceof Player ? (Player) entity : null;
-
-        if (entity instanceof ServerPlayer serverplayer && !level.isClientSide()) {
-
-        }
-
-        if (player != null) {
-            player.awardStat(Stats.ITEM_USED.get(this));
-            if (!player.getAbilities().instabuild) {
-                stack.shrink(1);
-            }
-        }
-
-        entity.gameEvent(GameEvent.EAT);
-        return stack;
-    }
     @Override
     public int getUseDuration(ItemStack stack) {
         return USE_DURATION;
@@ -123,10 +104,6 @@ public class PerunsLightningSword extends SwordItem {
                         entity.level.scheduleTick(randomPos, Blocks.LIGHT, damageDuration);
                     }
                 }
-
-
-
-
 
             }
         });
