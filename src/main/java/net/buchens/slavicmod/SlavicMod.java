@@ -9,6 +9,7 @@ import net.buchens.slavicmod.item.ModItems;
 import net.buchens.slavicmod.loot.ModLootModifiers;
 import net.buchens.slavicmod.potion.ModPotions;
 import net.buchens.slavicmod.util.BetterBrewingRecipe;
+import net.buchens.slavicmod.villager.ModVillagers;
 import net.buchens.slavicmod.world.feature.ModConfiguredFeatures;
 import net.buchens.slavicmod.world.feature.ModPlacedFeatures;
 
@@ -55,7 +56,7 @@ public class SlavicMod {
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
         ModEntityTypes.register(modEventBus);
-
+        ModVillagers.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -79,6 +80,8 @@ public class SlavicMod {
 
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
                     ModItems.THUNDERBOLT_BASE.get(),  ModPotions.THUNDERBOLT_POTION.get()));
+
+            ModVillagers.registerPOIs();
         });
     }
 
