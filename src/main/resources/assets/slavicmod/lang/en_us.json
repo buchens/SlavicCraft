@@ -102,5 +102,7 @@
 
   "effect.slavicmod.swallow": "Swallow",
   "effect.slavicmod.blizzard": "Blizzard",
-  "effect.slavicmod.thunderbolt": "Thunderbolt"
+  "effect.slavicmod.thunderbolt": "Thunderbolt",
+
+  "entity.minecraft.villager.herbalist": "Herbalist"
 }
