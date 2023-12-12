@@ -20,12 +20,12 @@ public class ModVillagers {
     public  static final DeferredRegister<VillagerProfession> VILLAGER_PROFESSIONS =
             DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, SlavicMod.MOD_ID);
 
-    public static final RegistryObject<PoiType> CAULDRON = POI_TYPES.register("cauldron",
-            () -> new PoiType(ImmutableSet.copyOf(Blocks.CAULDRON.getStateDefinition().getPossibleStates()), 1, 1));
+    public static final RegistryObject<PoiType> ANVIL = POI_TYPES.register("anvil",
+            () -> new PoiType(ImmutableSet.copyOf(Blocks.ANVIL.getStateDefinition().getPossibleStates()), 1, 1));
 
     public static final RegistryObject<VillagerProfession> HERBALIST = VILLAGER_PROFESSIONS.register("herbalist",
-            () -> new VillagerProfession("herbalist", x -> x.get() == CAULDRON.get(),
-                    x -> x.get() == CAULDRON.get(), ImmutableSet.of(), ImmutableSet.of(),
+            () -> new VillagerProfession("herbalist", x -> x.get() == ANVIL.get(),
+                    x -> x.get() == ANVIL.get(), ImmutableSet.of(), ImmutableSet.of(),
                     SoundEvents.VILLAGER_WORK_FARMER));
 
 
@@ -33,7 +33,7 @@ public class ModVillagers {
     public static void registerPOIs() {
         try {
             ObfuscationReflectionHelper.findMethod(PoiType.class,
-                    "registerBlockStates", PoiType.class).invoke(null, CAULDRON);
+                    "registerBlockStates", PoiType.class).invoke(null, ANVIL.get());
         } catch (InvocationTargetException | IllegalAccessException exception) {
             exception.printStackTrace();
         }
