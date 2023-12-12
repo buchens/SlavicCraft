@@ -61,6 +61,9 @@ public class SlavicMod {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
+            ModVillagers.registerPOIs();
+
+
             SpawnPlacements.register(ModEntityTypes.DROWNER.get(),
                     SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     Monster::checkAnyLightMonsterSpawnRules);
@@ -81,7 +84,7 @@ public class SlavicMod {
             BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
                     ModItems.THUNDERBOLT_BASE.get(),  ModPotions.THUNDERBOLT_POTION.get()));
 
-            ModVillagers.registerPOIs();
+
         });
     }
 

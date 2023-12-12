@@ -44,6 +44,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> VANADIUM_BLOCK = registerBlock("vanadium_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
+
+    public static final RegistryObject<Block> HERBALIST_TABLE = registerBlock("herbalist_table",
+            () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
+                    .strength(2.5f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
     public static final RegistryObject<Block> VANADIUM_ORE = registerBlock("vanadium_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
