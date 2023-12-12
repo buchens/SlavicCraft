@@ -5,6 +5,7 @@ import net.buchens.slavicmod.SlavicMod;
 import net.buchens.slavicmod.entity.ModEntityTypes;
 import net.buchens.slavicmod.entity.custom.DrownerEntity;
 import net.buchens.slavicmod.item.ModItems;
+import net.buchens.slavicmod.villager.ModVillagers;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
@@ -26,12 +27,31 @@ import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.common.Mod;
 
 import java.util.List;
+@Mod.EventBusSubscriber(modid = SlavicMod.MOD_ID)
+public class ModEvents { @SubscribeEvent
+public static void addCustomTrades(VillagerTradesEvent event) {
+    if(event.getType() == VillagerProfession.TOOLSMITH) {
+        Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+        ItemStack stack = new ItemStack(ModItems.GOLD_COIN.get(), 1);
+        int villagerLevel = 1;
 
-public class ModEvents {
-    @Mod.EventBusSubscriber(modid = SlavicMod.MOD_ID)
-    public static class ForgeEvents {
-        // Add your event handlers here
+        trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                new ItemStack(Items.EMERALD, 2),
+                stack,10,8,0.02F));
     }
+
+    if(event.getType() == ModVillagers.HERBALIST.get()) {
+        Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+        ItemStack stack = new ItemStack(ModItems.VANADIUM_INGOT.get(), 15);
+        int villagerLevel = 1;
+
+        trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                new ItemStack(Items.EMERALD, 5),
+                stack,10,8,0.02F));
+    }
+}
+
+
 
     @Mod.EventBusSubscriber(modid = SlavicMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ModEventBusEvents {
@@ -40,4 +60,5 @@ public class ModEvents {
             event.put(ModEntityTypes.DROWNER.get(), DrownerEntity.setAttributes());
         }
     }
+
 }
