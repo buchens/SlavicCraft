@@ -4,6 +4,7 @@ import net.buchens.slavicmod.SlavicMod;
 import net.buchens.slavicmod.base.ModArmorMaterial;
 import net.buchens.slavicmod.block.ModBlocks;
 import net.buchens.slavicmod.entity.ModEntityTypes;
+import net.buchens.slavicmod.item.custom.HolyHammerOfSvarozhits;
 import net.buchens.slavicmod.item.custom.MightyHammerOfVeles;
 import net.buchens.slavicmod.item.custom.PerunsLightningSword;
 import net.buchens.slavicmod.item.custom.ReinforcedBoarArmorItem;
@@ -36,6 +37,8 @@ public class ModItems {
             () -> new MightyHammerOfVeles(Tiers.VELES, 10, -3.0f, props() ) );
     public static final RegistryObject<Item> PERUNS_LIGHTNING_SWORD = ITEMS.register("peruns_lightning_sword",
             () -> new PerunsLightningSword(Tiers.PERUN, 8, -1.5f, props() ) );
+    public static final RegistryObject<Item> HOLY_HAMMER_OF_SVAROZHITS = ITEMS.register("holy_hammer_of_svarozhits",
+            () -> new HolyHammerOfSvarozhits(Tiers.SVAROZHITS, 9, -2.5f, props() ) );
 
     public static final RegistryObject<Item> ALCOHOL = ITEMS.register("alcohol",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB))) ;
@@ -165,6 +168,14 @@ public class ModItems {
                 8f,
                 4f,
                 10,
+                null,
+                () -> Ingredient.of(ModBlocks.SILVER_BLOCK.get()));
+        public static final Tier SVAROZHITS = new ForgeTier(
+                5,
+                2000,
+                6f,
+                4.5f,
+                8,
                 null,
                 () -> Ingredient.of(ModBlocks.SILVER_BLOCK.get()));
         public static final Tier VELES = new ForgeTier(

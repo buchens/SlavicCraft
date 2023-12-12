@@ -3,8 +3,8 @@
 3. Zbroja i itemy ze stali i srebra
 4. potiony + rośliny nowe --
 5. customowe villagery (waluta) (zielarz, wzmocniony kowal, kupiec + questy (opcjonalne))
-6. Legendarne itemy
-7. dodanie gryfa z innych mobów plus customowy lootdrop + zatrucie
+6. Legendarne itemy --
+7. dodanie gryfa z innych mobów plus customowy lootdrop + zatrucie //
 8. Utopiec + mózg do jaskółki 0.125 - 0.2 + dash + withering --
 9.wampir + krwawienie + slowness + daje itemy na wampiorzy miecz  z lifesteal 2
 10. ghul + takie zombie + występuje stadnie +
