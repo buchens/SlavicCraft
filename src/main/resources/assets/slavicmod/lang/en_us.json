@@ -106,5 +106,5 @@
   "effect.slavicmod.blizzard": "Blizzard",
   "effect.slavicmod.thunderbolt": "Thunderbolt",
 
-  "entity.minecraft.villager.herbalist": "Herbalist"
+  "entity.minecraft.villager.slavicmod.herbalist": "Herbalist"
 }
