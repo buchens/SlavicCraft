@@ -2,6 +2,7 @@ package net.buchens.slavicmod.entity;
 
 import net.buchens.slavicmod.SlavicMod;
 import net.buchens.slavicmod.entity.custom.DrownerEntity;
+import net.buchens.slavicmod.entity.custom.WildHuntWarriorEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -18,9 +19,9 @@ public class ModEntityTypes {
             () -> EntityType.Builder.of(DrownerEntity::new, MobCategory.MONSTER)
             .sized(1.0f, 1.0f)
             .build(new ResourceLocation(SlavicMod.MOD_ID, "drowner").toString()));
-    public static final RegistryObject<EntityType<DrownerEntity>> WILDHUNTWARRIOR =
+    public static final RegistryObject<EntityType<WildHuntWarriorEntity>> WILDHUNTWARRIOR =
             ENTITY_TYPES.register("wild_hunt_warrior",
-                    () -> EntityType.Builder.of(DrownerEntity::new, MobCategory.MONSTER)
+                    () -> EntityType.Builder.of(WildHuntWarriorEntity::new, MobCategory.MONSTER)
                             .sized(1.0f, 1.0f)
                             .build(new ResourceLocation(SlavicMod.MOD_ID, "wild_hunt_warrior").toString()));
     public static void register(IEventBus eventBus) {

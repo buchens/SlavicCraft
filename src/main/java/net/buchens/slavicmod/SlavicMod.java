@@ -5,6 +5,7 @@ import net.buchens.slavicmod.block.ModBlocks;
 import net.buchens.slavicmod.effect.ModEffects;
 import net.buchens.slavicmod.entity.ModEntityTypes;
 import net.buchens.slavicmod.entity.client.DrownerRenderer;
+import net.buchens.slavicmod.entity.client.WildHuntWarriorRenderer;
 import net.buchens.slavicmod.item.ModItems;
 import net.buchens.slavicmod.loot.ModLootModifiers;
 import net.buchens.slavicmod.potion.ModPotions;
@@ -67,6 +68,9 @@ public class SlavicMod {
             SpawnPlacements.register(ModEntityTypes.DROWNER.get(),
                     SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     Monster::checkAnyLightMonsterSpawnRules);
+            SpawnPlacements.register(ModEntityTypes.WILDHUNTWARRIOR.get(),
+                    SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Monster::checkAnyLightMonsterSpawnRules);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CELANDINE.getId(), ModBlocks.POTTED_CELANDINE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.WHITE_MYRTLE.getId(), ModBlocks.POTTED_WHITE_MYRTLE);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.CORTINARIUS.getId(), ModBlocks.POTTED_CORTINARIUS);
@@ -96,8 +100,13 @@ public class SlavicMod {
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
+
+            EntityRenderers.register(ModEntityTypes.WILDHUNTWARRIOR.get(), WildHuntWarriorRenderer::new);
             EntityRenderers.register(ModEntityTypes.DROWNER.get(), DrownerRenderer::new);
 
         }
+
+
     }
 }

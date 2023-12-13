@@ -8,6 +8,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -21,6 +22,8 @@ import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import software.bernie.geckolib3.core.AnimationState;
@@ -36,6 +39,7 @@ public class WildHuntWarriorEntity extends Monster implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
     public WildHuntWarriorEntity(EntityType<? extends Monster> p_33002_, Level p_33003_) {
         super(p_33002_, p_33003_);
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.DIAMOND_SWORD));
     }
     public static AttributeSupplier setAttributes() {
         return Monster.createMonsterAttributes()
@@ -55,7 +59,7 @@ public class WildHuntWarriorEntity extends Monster implements IAnimatable {
                 }
 
                 if (i > 0 && Math.random() < 0.42) {
-                    ((LivingEntity)p_32257_).addEffect(new MobEffectInstance(MobEffects.WITHER, i * 15, 0), this);
+                    ((LivingEntity)p_32257_).addEffect(new MobEffectInstance(MobEffects.WEAKNESS, i * 15, 0), this);
                 }
             }
 
@@ -77,6 +81,9 @@ public class WildHuntWarriorEntity extends Monster implements IAnimatable {
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, IronGolem.class, true));
         this.targetSelector.addGoal(4, new NearestAttackableTargetGoal<>(this, Creeper.class, true));
     }
+
+
+
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {

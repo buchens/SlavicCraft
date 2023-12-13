@@ -4,6 +4,7 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.buchens.slavicmod.SlavicMod;
 import net.buchens.slavicmod.entity.ModEntityTypes;
 import net.buchens.slavicmod.entity.custom.DrownerEntity;
+import net.buchens.slavicmod.entity.custom.WildHuntWarriorEntity;
 import net.buchens.slavicmod.item.ModItems;
 import net.buchens.slavicmod.villager.ModVillagers;
 import net.minecraft.resources.ResourceLocation;
@@ -58,11 +59,7 @@ public static void addCustomTrades(VillagerTradesEvent event) {
         @SubscribeEvent
         public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
             event.put(ModEntityTypes.DROWNER.get(), DrownerEntity.setAttributes());
+            event.put(ModEntityTypes.WILDHUNTWARRIOR.get(), WildHuntWarriorEntity.setAttributes());
 
         }
-        @SubscribeEvent
-        public static void WildHuntWarriorAttributeEvent(EntityAttributeCreationEvent event) {
-            event.put(ModEntityTypes.WILDHUNTWARRIOR.get(), DrownerEntity.setAttributes());
-    }
-
-}}
+      }}
