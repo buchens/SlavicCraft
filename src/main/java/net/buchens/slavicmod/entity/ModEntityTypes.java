@@ -18,6 +18,11 @@ public class ModEntityTypes {
             () -> EntityType.Builder.of(DrownerEntity::new, MobCategory.MONSTER)
             .sized(1.0f, 1.0f)
             .build(new ResourceLocation(SlavicMod.MOD_ID, "drowner").toString()));
+    public static final RegistryObject<EntityType<DrownerEntity>> WILDHUNTWARRIOR =
+            ENTITY_TYPES.register("wild_hunt_warrior",
+                    () -> EntityType.Builder.of(DrownerEntity::new, MobCategory.MONSTER)
+                            .sized(1.0f, 1.0f)
+                            .build(new ResourceLocation(SlavicMod.MOD_ID, "wild_hunt_warrior").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }

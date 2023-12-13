@@ -70,6 +70,9 @@ public class ModItems {
     public static final RegistryObject<Item> DROWNER_SPAWN_EGG = ITEMS.register("drowner_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.DROWNER, 0x314E82, 0xFF9E24,
                     new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)));
+    public static final RegistryObject<Item> WILD_HUNT_WARRIOR_SPAWN_EGG = ITEMS.register("wild_hunt_warrion_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.WILDHUNTWARRIOR, 0x243F34, 0x6C6377,
+                    new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)));
 
     public static final RegistryObject<Item> DROWNER_BRAIN = ITEMS.register("drowner_brain",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );

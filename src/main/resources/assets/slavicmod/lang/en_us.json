@@ -11,6 +11,7 @@
   "item.slavicmod.alcohol": "Alcohol",
   "item.slavicmod.swallow": "Swallow",
   "entity.slavicmod.drowner": "Drowner",
+  "entity.slavicmod.wild_hunt_warrior": "Wild hunt warrior",
 
   "item.slavicmod.mighty_hammer_of_veles": "Mighty hammer of Veles",
   "item.slavicmod.peruns_lightning_sword": "Perun's lightning sword",
@@ -43,6 +44,7 @@
   "item.slavicmod.bear_chestplate_component": "Bear chestplate component",
   "item.slavicmod.bear_helmet_component": "Bear helmet component",
   "item.slavicmod.drowner_spawn_egg": "Drowner spawn egg",
+  "item.slavicmod.wild_hunt_warrior_spawn_egg": "Wild Hunt Warrior spawn egg",
   "item.slavicmod.raw_chrome": "Raw Chrome",
   "item.slavicmod.raw_nickel": "Raw Nickel",
   "item.slavicmod.raw_manganese": "Raw Manganese",

@@ -58,7 +58,11 @@ public static void addCustomTrades(VillagerTradesEvent event) {
         @SubscribeEvent
         public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
             event.put(ModEntityTypes.DROWNER.get(), DrownerEntity.setAttributes());
+
         }
+        @SubscribeEvent
+        public static void WildHuntWarriorAttributeEvent(EntityAttributeCreationEvent event) {
+            event.put(ModEntityTypes.WILDHUNTWARRIOR.get(), DrownerEntity.setAttributes());
     }
 
-}
+}}
