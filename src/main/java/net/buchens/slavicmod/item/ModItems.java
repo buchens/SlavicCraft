@@ -115,15 +115,6 @@ public class ModItems {
     public static final RegistryObject<Item> SILVER_COIN = ITEMS.register("silver_coin",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
 
-    public static final RegistryObject<Item> SWALLOW_BASE = ITEMS.register("swallow_base",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
-
-    public static final RegistryObject<Item> BLIZZARD_BASE = ITEMS.register("blizzard_base",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
-
-    public static final RegistryObject<Item> THUNDERBOLT_BASE = ITEMS.register("thunderbolt_base",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
-
     public static final RegistryObject<Item> BERBERCANEFRUIT_SEED = ITEMS.register("berbercanefruit_seed",
             () -> new ItemNameBlockItem(ModBlocks.BERBERCANEFRUIT_CROP.get(),
                     new Item.Properties().tab(ModCreativeModeTab.SLAVICCRAFT_TAB)) );
