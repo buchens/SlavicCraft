@@ -79,14 +79,6 @@ public class SlavicMod {
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.VERBENA.getId(), ModBlocks.POTTED_VERBENA);
 
 
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
-                    ModItems.SWALLOW_BASE.get(),  ModPotions.SWALLOW_POTION.get()));
-
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
-                    ModItems.BLIZZARD_BASE.get(),  ModPotions.BLIZZARD_POTION.get()));
-
-            BrewingRecipeRegistry.addRecipe(new BetterBrewingRecipe(Potions.AWKWARD,
-                    ModItems.THUNDERBOLT_BASE.get(),  ModPotions.THUNDERBOLT_POTION.get()));
 
 
         });
