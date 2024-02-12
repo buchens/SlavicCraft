@@ -1,5 +1,5 @@
-1. Ruda srebra + naturalny spawn rud (all) --
-2. przepalanie na stal --
+- [x]  Ruda srebra + naturalny spawn rud (all) --
+- [] 2. przepalanie na stal --
 3. Zbroja i itemy ze stali i srebra
 4. potiony + rośliny nowe --
 5. customowe villagery (waluta) (zielarz, wzmocniony kowal, kupiec + questy (opcjonalne))
