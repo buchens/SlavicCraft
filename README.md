@@ -1,16 +1,22 @@
-- [x]  Ruda srebra + naturalny spawn rud (all) --
-- [x]  przepalanie na stal --
+- [x]  Ruda srebra + naturalny spawn rud (all) 
+- [x]  przepalanie na stal 
 - [x] Zbroja i itemy ze stali i srebra
-- [x] potiony + rośliny nowe --
-- [ ] customowe villagery (waluta) (zielarz, wzmocniony kowal, kupiec + questy (opcjonalne))
-- [x] Legendarne itemy --
-- [ ] dodanie gryfa z innych mobów plus customowy lootdrop + zatrucie //
-- [x] Utopiec + mózg do jaskółki 0.125 - 0.2 + dash + withering --
-- [ ]wampir + krwawienie + slowness + daje itemy na wampiorzy miecz  z lifesteal 2
-- [ ] ghul + takie zombie + występuje stadnie +
+- [x] potiony + rośliny nowe 
+- [ ] customowe villagery
+  - [ ] waluta
+  - [ ] zielarz, wzmocniony kowal kupiec
+  - [ ] questy (opcjonalne
+- [x] Legendarne itemy 
+- [ ] dodanie gryfa z innych mobów plus customowy lootdrop + zatrucie 
+- [x] Utopiec + mózg do jaskółki 0.125 - 0.2 + dash + withering 
+- [ ] wampir + krwawienie + slowness + daje itemy na wampiorzy miecz  z lifesteal 2
+- [ ] ghul + takie zombie + występuje stadnie 
 - [ ] alghul + może być w stadzie ghula + ma kolce działające jak thorns
-- [ ] dziki gon,
-  - [ ] outpost, raid, i sam gon jkoa 3 potacie + stal gonu
+- [ ] dziki gon
+  - [ ] outpost
+  - [ ] raid
+  - [ ] sam gon jkoa 3 potacie
+  - [ ] stal gonu
 występują w normalnym świecie 2 wojowników a podczas raidu są też nawigatorzy, z których dropią produkty do zrobienia ich różdzki do otwierania portalu do gonu
 
 - [ ] dzik
