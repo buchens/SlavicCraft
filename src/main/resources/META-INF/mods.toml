@@ -27,7 +27,7 @@ displayName="SlaviCraft" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="forge_logo.png" #optional
+logoFile="slavilogo.png"
 # A text field displayed in the mod UI
 credits="Thanks for this mod goes to Java and mrdudusiowski (best programmer in the world)"#optional
 # A text field displayed in the mod UI
