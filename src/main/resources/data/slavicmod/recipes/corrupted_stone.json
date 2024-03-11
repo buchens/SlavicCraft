@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "E": {
+      "item": "slavicmod:bucket_gon_steel"
+    },
+
+    "A": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "AEA",
+    "AAA"
+  ],
+  "result": {
+    "item": "slavicmod:corrupted_stone"
+
+  }
+}

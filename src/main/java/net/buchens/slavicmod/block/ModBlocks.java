@@ -81,6 +81,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
+    public static final RegistryObject<Block> CORRUPTED_STONE = registerBlock("corrupted_stone",
+            () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
+                    .strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.SLAVICCRAFT_TAB);
 
 //KWIATY
     public static final RegistryObject<Block> CELANDINE = registerBlock("celandine",
