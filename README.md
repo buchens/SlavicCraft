@@ -3,7 +3,7 @@
 - [x] Zbroja i itemy ze stali i srebra
 - [x] potiony + rośliny nowe 
 - [ ] customowe villagery
-  - [ ] waluta
+  - [x] waluta
   - [ ] zielarz, wzmocniony kowal kupiec
   - [ ] questy (opcjonalne
 - [x] Legendarne itemy 
