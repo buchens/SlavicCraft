@@ -32,15 +32,6 @@ import java.util.List;
 @Mod.EventBusSubscriber(modid = SlavicMod.MOD_ID)
 public class ModEvents { @SubscribeEvent
 public static void addCustomTrades(VillagerTradesEvent event) {
-    if (event.getType() == VillagerProfession.TOOLSMITH) {
-        Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
-        ItemStack stack = new ItemStack(ModItems.GOLD_COIN.get(), 1);
-        int villagerLevel = 1;
-
-        trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                new ItemStack(Items.EMERALD, 2),
-                stack, 10, 8, 0.02F));
-    }
     if (event.getType() == ModVillagers.HERBALIST.get()) {
         Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
         ItemStack stack = new ItemStack(ModItems.SILVER_COIN.get(), 1);
