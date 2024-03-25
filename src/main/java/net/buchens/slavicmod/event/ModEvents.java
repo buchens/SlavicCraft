@@ -44,7 +44,7 @@ public static void addCustomTrades(VillagerTradesEvent event) {
     if (event.getType() == ModVillagers.HERBALIST.get()) {
         Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
         ItemStack stack = new ItemStack(ModItems.SILVER_COIN.get(), 1);
-        int villagerLevel = 1;
+        int villagerLevel = 2;
 
         trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                 new ItemStack(ModBlocks.WHITE_MYRTLE.get(), 15),
@@ -53,16 +53,17 @@ public static void addCustomTrades(VillagerTradesEvent event) {
     if (event.getType() == ModVillagers.HERBALIST.get()) {
         Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
         ItemStack stack = new ItemStack(ModItems.SILVER_COIN.get(), 1);
-        int villagerLevel = 1;
+        int villagerLevel = 3;
 
         trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                 new ItemStack(ModBlocks.CORTINARIUS.get(), 15),
                 stack, 10, 8, 0.02F));
     }
+
     if (event.getType() == ModVillagers.HERBALIST.get()) {
         Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
         ItemStack stack = new ItemStack(ModItems.SILVER_COIN.get(), 1);
-        int villagerLevel = 1;
+        int villagerLevel = 4;
 
         trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                 new ItemStack(ModBlocks.MOLEYARROW.get(), 15),
@@ -71,7 +72,7 @@ public static void addCustomTrades(VillagerTradesEvent event) {
     if (event.getType() == ModVillagers.HERBALIST.get()) {
         Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
         ItemStack stack = new ItemStack(ModItems.SILVER_COIN.get(), 1);
-        int villagerLevel = 1;
+        int villagerLevel = 5;
 
         trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                 new ItemStack(ModBlocks.ALLSPICE.get(), 15),
@@ -80,7 +81,7 @@ public static void addCustomTrades(VillagerTradesEvent event) {
     if (event.getType() == ModVillagers.HERBALIST.get()) {
         Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
         ItemStack stack = new ItemStack(ModItems.SILVER_COIN.get(), 1);
-        int villagerLevel = 1;
+        int villagerLevel = 5;
 
         trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
                 new ItemStack(ModBlocks.VERBENA.get(), 15),
