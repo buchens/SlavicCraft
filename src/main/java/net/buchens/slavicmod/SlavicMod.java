@@ -11,6 +11,7 @@ import net.buchens.slavicmod.loot.ModLootModifiers;
 import net.buchens.slavicmod.potion.ModPotions;
 import net.buchens.slavicmod.util.BetterBrewingRecipe;
 import net.buchens.slavicmod.villager.ModVillagers;
+import net.buchens.slavicmod.world.diension.ModDimension;
 import net.buchens.slavicmod.world.feature.ModConfiguredFeatures;
 import net.buchens.slavicmod.world.feature.ModPlacedFeatures;
 
@@ -58,6 +59,7 @@ public class SlavicMod {
         ModPotions.register(modEventBus);
         ModEntityTypes.register(modEventBus);
         ModVillagers.register(modEventBus);
+        ModDimension.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
